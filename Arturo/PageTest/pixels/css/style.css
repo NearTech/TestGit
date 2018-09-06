@@ -1638,7 +1638,7 @@ a.hover-reverse:hover, a.hover-reverse:focus, a.hover-reverse:active {
   font-size: 70px;
   line-height: 60px;
   font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 700;
 }
 
