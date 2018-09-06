@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TestGit
 Test GITHUB para coordinar flujos de trabajo próximos
 #testing 
@@ -18,3 +19,11 @@ Test GITHUB para coordinar flujos de trabajo próximos
 #          | \
 #         m  m
 # Me lave la cara y el mono no
+=======
+# Porfavor suban todas las mamadas que puedan
+## Los putos gringos de las prepas no nos van a ganar :v
+### Hay que relacionarnos con las herrmaientas :3
+
+Les dejo un link para poder escribir con formato en los archivos markdown .md
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+>>>>>>> 9d359c27a43a6c728e303daed459bad552028874
