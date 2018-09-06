@@ -27,4 +27,5 @@ Test GITHUB para coordinar flujos de trabajo próximos
 
 Les dejo un link para poder escribir con formato en los archivos markdown .md
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
->>>>>>> 9d359c27a43a6c728e303daed459bad552028874
+>>>>>>> 9d359c27a43a6c728e303daed459bad55202887
+# push test
