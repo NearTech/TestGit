@@ -1,4 +1,4 @@
-# TestGit
-Test GITHUB para coordinar flujos de trabajo próximos
-#testing 
-#test biktor as2
+#Porfavor suban todas las mamadas que puedan
+##Los putos gringos de las prepas no nos van a ganar :v
+###hay que relacionarnos con las herrmaientas :3
+
