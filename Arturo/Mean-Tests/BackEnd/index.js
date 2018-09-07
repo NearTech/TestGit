@@ -1,4 +1,5 @@
 const express = require('express');
+const morgan = require('morgan');
 const app = express();
 
 
@@ -6,11 +7,11 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 
 //Middlewares
-
+app.use(morgan('dev'));
 //Routes
 
 //Starting server
 
 app.listen(app.get('port'), () => {
-    console.log('server on port 3000');
+    console.log('server on port', app.get('port'));
 });
