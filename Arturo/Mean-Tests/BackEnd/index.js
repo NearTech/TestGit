@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Routes
-app.use(require('./routes/test.routes'));
+app.use('/api/tests',require('./routes/test.routes'));
 
 //Starting server
 
