@@ -3,6 +3,7 @@ const router = express.Router();
 
 const test = require('../Controllers/test.controller');
 
+//Routing for actions
 router.get('/', test.getAllTests);
 router.post('/', test.createTest);
 router.get('/:id', test.getTest);
