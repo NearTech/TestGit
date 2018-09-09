@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col s5">
+      <div class="card">
+        <div class="card-content">
+          <form #customerForm="ngForm" (ngSubmit)="addCustomer(customerForm)">
+            <div class="row">
+              <div class="input-field s12">
+                <input type="text" name="alias" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.alias"
+                  placeholder="Ingresar nombre de empresa">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field s12">
+                <input type="text" name="planContract" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.planContract"
+                  placeholder="Ingresa tipo de plan">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field s12">
+                <input type="text" name="contactName" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.contactName"
+                  placeholder="Ingresar nombre de persona de contacto">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field s12">
+                <input type="text" name="contactEmail" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.contactEmail"
+                  placeholder="Ingresar correo electrónico">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field s12">
+                <input type="text" name="businessArea" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.businessArea"
+                  placeholder="Ingresa giro de negocio">
+              </div>
+            </div>
+            <div class="input-field">
+              <input type="checkbox" name="status" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.status"
+                placeholder="Estatus de usuario">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col s7"></div>
+  </div>
+</div>
