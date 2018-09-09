@@ -1,0 +1,29 @@
+{
+  "name": "TestGit",
+  "version": "1.0.0",
+  "description": "Les dejo un link para poder escribir con formato en los archivos markdown .md\r [Revisar éste link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon BackEnd/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NearTech/TestGit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NearTech/TestGit/issues"
+  },
+  "homepage": "https://github.com/NearTech/TestGit#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.13",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
