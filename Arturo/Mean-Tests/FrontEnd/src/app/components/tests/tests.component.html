@@ -1,3 +1,52 @@
-<p>
-  tests works!
-</p>
+<div class="CONTAINER">
+  <div class="row">
+    <div class="col s5">
+      <div class="card">
+        <div class="card-content">
+          <form #testForm="ngForm" (ngSubmit)="addTest(testForm)">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="testService.selectedTest._id">
+            <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="name" #name="ngModel" [(ngModel)]="testService.selectedTest.name" placeholder="Enter Name">
+                  <input type="text" name="condition" #condition="ngModel" [(ngModel)]="testService.selectedTest.condition" placeholder="Enter Condition">
+                  <input type="text" name="age" #age="ngModel" [(ngModel)]="testService.selectedTest.age" placeholder="Enter Age">
+                  <div class="card-action">
+                    <div class="input-field col s12">
+                      <button class="btn right">Save</button>
+                      <button class="btn" (click)="resetForm(testForm)">Clean</button>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col s7">
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Condition</th>
+          <th>Age</th>
+          <th>Options</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let test of testService.tests">
+            <td>{{ test.name }}</td>
+            <td>{{ test.condition }}</td>
+            <td>{{ test.age }}</td>
+            <td>
+              <a (click)="editTest(test)">
+                <i class="material-icons">edit</i>
+              </a>
+              <a (click)="deleteTest(test._id)">
+                  <i class="material-icons">delete</i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

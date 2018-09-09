@@ -3,7 +3,11 @@ const testCtrl = {};
 
 //Creates an Exam
 testCtrl.createTest = async (req, res) => {
-    const test = await new Test(req.body);
+    const test = await new Test({
+        name: req.body.name,
+        condition: req.body.condition,
+        age: req.body.age
+    });
     await test.save();
     res.json({
         'status': 'Test Saved'
