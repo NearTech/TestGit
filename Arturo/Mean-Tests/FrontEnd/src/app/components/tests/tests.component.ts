@@ -59,7 +59,7 @@ export class TestsComponent implements OnInit {
     }
 
   }
-
+  
   resetForm(form?: NgForm) {
     if (form) {
       form.reset();
