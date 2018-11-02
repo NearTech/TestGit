@@ -13,7 +13,7 @@ declare var M: any;
 })
 export class TestsComponent implements OnInit {
 
-  constructor(private testService: TestService) { }
+  constructor(public testService: TestService) { }
 
   ngOnInit() {
     this.getTests();
